@@ -1,0 +1,92 @@
+/*******************************
+Body
+********************************/
+
+
+
+/*******************************
+General Layout Container
+********************************/
+
+.layout-container {
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+    font-family: 'Cutive mono';
+    font: #efefef;
+    padding: 5%;
+    
+    
+}
+
+@media all and (min-width: 400px) {
+.layout-container {
+        max-width: 90%;
+    }
+}
+@media all and (min-width: 1024px) {
+.layout-container {
+        max-width: 76%;
+    }
+}
+@media all and (min-width: 1280px) {
+.layout-container {
+        max-width: 65%;
+    }
+}
+
+/*******************************
+Header Image
+********************************/
+
+.layout-container {
+    text-align: center;
+       
+}
+
+.layout-header {
+    background-image:url("../images/hikerlegs3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: 2px solid green;
+    padding: 5%;
+    
+}
+    
+@media all and (min-width: 240px) {
+.layout-header {
+        min-height: 200px;
+    }
+}
+@media all and (min-width: 400px) {
+//.layout-header {
+        min-height: 340px;
+    }
+}
+@media all and (min-width: 600px) {
+.layout-header {
+        min-height: 380px;
+    }
+}
+@media all and (min-width: 800px) {
+.layout-header {
+        min-height:550px;
+    }
+}
+
+@media all and (min-width: 900px) {
+//.layout-header {
+        min-height:650px;
+    }
+} 
+
+@media all and (min-width: 1024px) {
+.layout-header {
+        min-height:800px;
+    }
+}         
+@media all and (min-width: 1440px) {
+.layout-header {
+        min-height:1024px;
+    }
+}  
