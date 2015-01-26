@@ -24,38 +24,44 @@ General Layout Container
         max-width: 90%;
     }
 }
-@media all and (min-width: 1024px) {
+//@media all and (min-width: 1024px) {
 .layout-container {
         max-width: 76%;
     }
 }
-@media all and (min-width: 1280px) {
+//@media all and (min-width: 1280px) {
 .layout-container {
         max-width: 65%;
     }
 }
 
+
+.layout-container {
+    text-align: center;
+}
+
+
+
 /*******************************
 Header Image
 ********************************/
 
-.layout-container {
-    text-align: center;
-       
-}
+
 
 .layout-header {
+    display:block;
     background-image:url("../images/hikerlegs3.jpg");
     background-repeat: no-repeat;
-    background-size:
     border: 2px solid green;
-    padding: 5%;
+    padding: 10%;
     background-size: cover;
+    background-position: center;
+    position: relative;
 }
     
-@media all and (min-width: 240px) {
+@media all and (min-width: 400px) {
 .layout-header {
-        min-height: 200px;
+        min-height: 240px;
     }
 }
 @media all and (min-width: 400px) {
@@ -87,7 +93,7 @@ Header Image
 }         
 @media all and (min-width: 1440px) {
 .layout-header {
-        min-height:1024px;
+        min-height:1200px;
     }
 } 
 
@@ -96,22 +102,83 @@ Navigation
 ********************************/
 
 nav {
-    height: 60px;
-    margin: 30% auto 0 auto;
-    border-top: 1px rgba(255,255,255,0.35)solid;
+    height: 40px;
+    border-top: 2px rgba(255,255,255,0.35)solid;
+    margin: 40% auto 2% auto;
+    position: absolute;
+    bottom: 10px;
 
     
 }
 
 nav ul {
     list-style: : none;
-    margin: 0 10px 0;
     padding: 0;
-     
 }
 
 nav li {
+    display: inline;
+    margin-right: 20px;
+    
+}
+
+
+nav a {
     display: inline-block;
     color: rgba(255,255,255,0.5);
-    
+    font-size: 100%;
+    font-weight: 800;
+    font-size: 3vw;
+    letter-spacing: .2em;
+    text-decoration: none;
+    line-height: 2em;
+}
+
+nav .selected {
+    box-shadow: 0px -1px 0px white;
+}
+
+nav a.selected, nav a:hover {
+    color: white;
+}
+
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.layout-container:before,
+.layout-container:after {
+  content: "";
+  display: table;
+}
+.layout-container:after {
+  clear: both;
+}
+.layout-container {
+  clear: both;
+  *zoom: 1;
+}
+
+/*******************************
+Main
+********************************/
+
+.blog-container {
+    float: left;
+    width: 65%;   
+}
+
+.sidebar-container {
+    float: right;
+    width: 30%;
+    height: 200px;
+    overflow:scroll;
+    padding: 0 1% 0 1%;
+    border-top-width:10px;
+}
+
+p {
+
 }
